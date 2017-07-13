@@ -1,0 +1,4 @@
+I didn't use any of the logic or code developed by the other person.
+
+
+In Date.h, the setter function void errCode(int err) was made public by me instead of private as in the read functions the errCode should be null every time in the beginning. 

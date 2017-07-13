@@ -1,0 +1,63 @@
+/* Place all of your CSS Code in this file */
+
+body {
+    color : black;
+  background-color: lightgrey;
+}
+
+nav, footer{
+    background-color : black;
+}
+
+header{
+    background-color : peru;
+    display:block;
+}
+
+
+ h1.app-title{
+     font-family : 'Pacifico', cursive;
+     font-size : 30px;
+     text-align : left;
+     margin: 0 ; 
+     padding:0;
+ }
+ 
+ div.main-table-container{
+    max-height : 500px;
+     overflow : scroll;
+     background-color : lightcyan;
+ }
+
+ th{
+     background-color : peru;
+     border: 2px inset lightcyan ; 
+     height: 10px; 
+     padding : 5px 5px;
+     width : auto; 
+     text-align: left; vertical-align: bottom; 
+ }
+
+ td{
+    border:  2px inset lightcyan ; 
+     padding : 5px 5px;
+     text-align : left;
+     vertical-align:top;
+ }
+
+p span{
+     font-weight : bolder;
+     font-style : italic;
+ }
+/********************************************************************************* 
+*
+* WEB222 – Assignment #4a
+*
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: Harsh Jayantibhai Patel Student ID: 131964157 Date: 26-3-2017 
+* 
+********************************************************************************/

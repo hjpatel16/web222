@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+    <title>Sign Up</title>
+   <script src="assign5.js"></script>
+    <link rel="stylesheet" href="assign5.css" type="text/css" />
+</head>
+<body>
+        <header>
+            <h1 id="p">JobSearch<b>.com</b></h1>
+        </header>
+        <section class="name">
+            <h2><strong>Create Your Account</strong></h2>
+            <nav>
+               
+                <h3>* Required information</h3>
+            </nav>
+            <form method="post" name="signup" action="https://httpbin.org/post" onsubmit='return validateForm(this);'>
+                <div id="1">
+                    <h4>Basic Information</h4>
+                            Email*
+                            <input type="email" name="name3" id="email" />
+                            <br />
+                            Password*
+                            <input type="password" name="pass1" onchange="return validatepassword(this);"/>
+                            <br />
+                            Retype Password*
+                    <input type="password" name="pass2" onchange="return validatepassword(this);" />
+                            <br />
+                            First Name*
+                    <input type="text" name="fname" id="fname" onchange="return validatefname(this);" />
+                            <br />
+                            Last Name*
+                    <input type="text" name="lname" id="cl" value='' onchange="return validatelname(this);" />
+                            <br />
+                            Phone Number*
+                    <input type="tel" name="phone" id="phone" placeholder="999-999-9999" onchange="return validatePhoneNumber(this);" />
+                             <br />
+                            Address*
+                            <input type="text" name="add" id="add" />
+                            <br />
+                            City*
+                            <input type="text" name="city" id="city" />
+                            <br />
+                            Province*
+                            <select name="prov" id="prov">
+                                <option value="AB" selected="selected">Alberta</option>
+                                <option value="BC">British Columbia</option>
+                                <option value="MB">Manitoba</option>
+                                <option value="NB">New Brunswick</option>
+                                <option value="NL">Newfoundland and Labrador</option>
+                                <option value="NS">Nova Scotia</option>
+                                <option value="ON">Ontario</option>
+                                <option value="PE">Prince Edward Island</option>
+                                <option value="Qc">Quebec</option>
+                                <option value="SK">Saskatchewan</option>
+                                <option value="NT">Northwest Territories</option>
+                                <option value="NU">Nunavut</option>
+                                <option value="YT">Yukon</option>
+                            </select>
+                            <br />
+                            Country:
+                            <input type="text" name="ctry" list="ctry" />
+                            <datalist id="ctry">
+                                <option value="Canada">Canada</option>
+                                <option value="The United States">The United States</option>
+                                <option value="India">India</option>
+                                <option value="Russia">Russia</option>
+                                <option value="New Zealand">New Zealand</option>
+                            </datalist>
+                </div>
+                <div id="2">
+                    <h4>Education</h4>
+                    School: <input type="text" name="sch" id="sch" /><br />
+                    Program: <input type="text" name="prog" id="prog" /><br />
+                    Education Level: <select name="deg" id="deg">
+                        <option value="">Technical Diploma</option>
+                        <option value="0">College Diploma</option>
+                        <option value="">Bachelor's Degree</option>
+                        <option value="0">Master's Degree</option>
+                        <option value="">Others</option>
+                    </select><br />
+                    <fieldset>
+                        <legend>Education Status</legend>
+                        <input type="radio" name="typ" id="t" /> Graduated<br />
+                        <input type="radio" name="typ" id="y" /> Current Enrolled<br />
+                        <input type="radio" name="typ" id="l" /> Did Not Graduate<br />
+                    </fieldset>
+                    Graduation Date: <input type="text" name="dat" id="dat" />  <br />
+                </div>
+
+                <div id="3">
+                    <h4>Work Experience</h4>
+                    Employer: <input type="text" name="ename" id="ename" /> <br />
+                    Job Title: <input type="text" name="jobt" id="jobt" />  <br />
+                    Job Duty: <textarea cols="30" rows="10"> </textarea>  <br />
+                    Employer: <input type="text" name="enam" id="enam" /> <br />
+                    Worked Year: <input type="number" name="wyn" id="wyn" min="1" max="20" /> <br />
+                </div>
+                <div id="4">
+                    <h4>Attachments</h4>
+                    Attachments: <input type="file" name="fl" multiple /><br />
+                </div>
+                <br />
+                <footer id="5">
+                    <input type="reset" value="Reset" />&nbsp;&nbsp;
+                    <input type="submit" value="Apply" />
+                </footer>
+            </form>
+        </section>
+</body>
+</html>
+
